@@ -5,3 +5,5 @@
 Coursera `Databases and SQL for Data Science` 강의 완강
 #### 10/14
 파이썬 알고리즘 인터뷰 (ch7)
+#### 10/15
+`Work` DevOps Track2 Homework Review 
