@@ -12,3 +12,5 @@ Coursera `Databases and SQL for Data Science` 강의 완강
 If they don't appreciate you, they don't deserve you.
 #### 10/18
 파이썬 알고리즘 인터뷰 (ch8 ~p212)
+#### 10/19
+SparkAR Creator Lab #1 
