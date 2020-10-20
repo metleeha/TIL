@@ -14,3 +14,6 @@ If they don't appreciate you, they don't deserve you.
 파이썬 알고리즘 인터뷰 (ch8 ~p212)
 #### 10/19
 SparkAR Creator Lab #1 
+#### 10/20
+SparkAR Creator Lab #2 
+[Coursera] Machine Learning - Andrew Ng, Standford University Week1
