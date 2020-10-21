@@ -16,4 +16,6 @@ If they don't appreciate you, they don't deserve you.
 SparkAR Creator Lab #1 
 #### 10/20
 SparkAR Creator Lab #2 
-[Coursera] Machine Learning - Andrew Ng, Standford University Week1
+[Coursera] Machine Learning - Andrew Ng(Stanford University) Week 1
+#### 10/21
+[Coursera] Machine Learning - Andrew Ng(Stanford University) Week 2
