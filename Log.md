@@ -14,3 +14,5 @@
 |21|Courera|Machine Learning - Andrew Ng(Stanford University) Week 2|
 |22|||
 |23|React|Context, React Hook|
+|24-26|||
+|27|ML|머신러닝을 위한 수학 - ch2 ~p106)|
