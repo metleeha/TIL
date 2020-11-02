@@ -17,3 +17,8 @@
 |24-26|||
 |27|ML|머신러닝을 위한 수학 - ch2 ~p106)|
 |28-29|React|`WORK` Project|
+|30-31|||
+
+|November|Title|Content|
+|-|-|-|
+|1-2|Coursera|Machine Learning Foundations: A Case Study Approach - (Washington University Week 1|
