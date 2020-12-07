@@ -1,24 +1,8 @@
 # Log
+> 공부한 내용 한 줄 요약 
 
 ## 2020
-|October|Title|Content|
+### December 
+|Date|Title|Content|
 |-|-|-|
-|13|Coursera| `Databases and SQL for Data Science` 강의 완강|
-|14|파이썬 알고리즘 인터뷰|ch7|
-|15|`Work`|DevOps Track2 Homework Review|
-|16||😓 Snap out of it! 😎 You can do it.|
-|17||If they don't appreciate you, they don't deserve you.|
-|18|파이썬 알고리즘 인터뷰|ch8 ~p212|
-|19|SparkAR Creator|Lab #1|
-|20|1.SparkAR Creator <br> 2.Coursera|1.Lab #2<br>2.Machine Learning - Andrew Ng(Stanford University) Week 1|
-|21|Courera|Machine Learning - Andrew Ng(Stanford University) Week 2|
-|22|||
-|23|React|`WORK` Project|
-|24-26|||
-|27|ML|머신러닝을 위한 수학 - ch2 ~p106)|
-|28-29|React|`WORK` Project|
-|30-31|||
-
-|November|Title|Content|
-|-|-|-|
-|1-2|Coursera|Machine Learning Foundations: A Case Study Approach - (Washington University Week 1|
+|7|RSCHA EX200|Udacity `prepare-rhcsa-ex-200-exams-with-real-exam-practice-test`|
