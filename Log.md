@@ -9,3 +9,5 @@
 |8-9|CV|Update|
 |10-11|Algorithm|Book `Python Coding Interview`|
 |12|Interview - Basic Questions|
+|13|Start Project - Portable Forum(Django + Vue.js)|
+|14-15|Review - Programmers Frontend Dev(ilovedog-vanilla-js)|
