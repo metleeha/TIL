@@ -8,6 +8,6 @@
 |7|RSCHA EX200|Udacity `prepare-rhcsa-ex-200-exams-with-real-exam-practice-test`|
 |8-9|CV|Update|
 |10-11|Algorithm|Book `Python Coding Interview`|
-|12|Interview - Basic Questions|
-|13|Start Project - Portable Forum(Django + Vue.js)|
-|14-15|Review - Programmers Frontend Dev(ilovedog-vanilla-js)|
+|12|Interview|Basic Questions|
+|13|Start Project|Portable Forum(Django + Vue.js)|
+|14-16|Review|Programmers Frontend Dev & Algorithm|
