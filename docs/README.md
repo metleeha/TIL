@@ -1,3 +1,8 @@
+---
+title: Today I Learned
+sidebar: false
+next: false
+---
 # Today I Learned
 
 > 테스트 중 
