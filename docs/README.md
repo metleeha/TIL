@@ -1,24 +1,8 @@
 ---
 title: Today I Learned
-sidebar: false
 next: false
 ---
+
 # Today I Learned
 
-> 테스트 중 
-
-안녕하세요
-
-- hi
-- cat
-- dog
-
-this code 
-```bash
-yarn dev
-```
-
-|this|content|
-|-|-|
-|1|2|
-
+:fountain_pen: 오늘 배운 것은 오늘 정리하자!

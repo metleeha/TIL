@@ -1,4 +1,4 @@
-const sidebar = require('./sidebar')
+const sidebar = require("./sidebar");
 
 // config.js
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
             link: 'https://metleeha.tistory.com/'
           },
         ],
-        sidebar: sidebar,
+        sidebar,
         lastUpdated: 'Last Updated',
         smoothScroll: true
     },
@@ -24,6 +24,6 @@ module.exports = {
         // text
     },
     plugins: [
-        
+        '@vuepress/back-to-top'
     ]
 }

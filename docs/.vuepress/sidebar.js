@@ -1,12 +1,12 @@
-// sidebar.js 
+const Javascript = './Javascript'
+const JavascriptList = [
+    'regular-expression-1',
+    'regular-expression-2'
+]
 
 module.exports = [
-    { title: 'Home', path: '/'},
     {
         title: 'Javascript',
-        children: [
-            'Javascript/regular-expression-1', 
-            'Javascript/regular-expression-2'
-        ]
-    }
+        children: JavascriptList.map(v => `${Javascript}/${v}`)
+    },
 ]

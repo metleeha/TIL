@@ -1,4 +1,4 @@
-# [JS] Regular Expression
+# [JS] Regular Expression (2)
 
 ## .test()
 문자열에서 특정 구문이 일치하는지 알아보기 위한 정규식 `/sample/`. 

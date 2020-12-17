@@ -1,4 +1,4 @@
-# [JS] Regular Expression
+# [JS] Regular Expression (1)
 
 ## 정규식 패턴
 
