@@ -1,0 +1,52 @@
+/* custom */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=PT+Sans&display=swap');
+
+only-pc()
+  @media (min-width: 1200px)
+    {block}
+em
+  color #00a
+
+.container
+  +only-pc()
+    width 1200px
+    margin 0 auto
+
+.navbar
+  height auto 
+  // .container
+  //   position relative
+
+.home-link
+  padding-left 3rem
+  +only-pc()
+    padding-left 0
+  vertical-align middle
+  display inline-block
+  text-decoration none
+  color #000
+  line-height 130%
+  text-align center
+  figure
+    display inline-block
+    vertical-align middle
+    width 50px
+    height 50px
+    border-radius 50px
+    overflow hidden
+    margin 0
+    img
+      width 100%
+      height 100%
+      object-fit cover
+  div
+    display inline-block
+    vertical-align middle
+    strong
+      display block
+      font-size 17px
+    em
+      display block
+      font-size 13px
+      font-style normal
+      color #666
