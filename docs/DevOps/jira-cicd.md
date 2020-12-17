@@ -1,10 +1,7 @@
----
-title: jira-cicd
----
 
-![](https://media.vlpt.us/images/hamon/post/ef7781b1-9609-4239-a6a9-816fd504aa06/kubernetes_cover.png)
 # JIRA CICD Tutorials
 > Jira를 쿠버네티스 클러스터에 올리고, Gitlab, Jenkins를 연동해서 DevOps toolchain을 구성합니다.
+![](https://media.vlpt.us/images/hamon/post/ef7781b1-9609-4239-a6a9-816fd504aa06/kubernetes_cover.png)
 
 최근 IT 서비스 관리(ITSM, Information Technology Service Management)와 개발 및 운영 서비스를 통합 관리하는 DevOps 툴체인이 주요 트렌드로 자리잡고 있습니다. 최근 기업들은 Openshift, Kuberenetes와 같은 컨테이너 오케스트레이션 플랫폼으로 애플리케이션의 배포, 확장, 유지보수를 모두 할 수 있도록 환경 구축을 하고 서비스 관리를 위해 JIRA를 적극적으로 활용하고 있습니다.
 
