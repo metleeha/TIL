@@ -1,5 +1,4 @@
 ---
-title: Today I Learned
 next: false
 ---
 
