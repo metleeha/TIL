@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:metleeha/TIL.git",
-  "author": "hayden-lee <hadongme@gmail.com>",
+  "author": "hadong-lee <hadongme@gmail.com>",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
