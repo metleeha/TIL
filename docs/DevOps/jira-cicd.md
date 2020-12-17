@@ -1,7 +1,3 @@
----
-title: jira-cicd
----
-
 ![](https://media.vlpt.us/images/hamon/post/ef7781b1-9609-4239-a6a9-816fd504aa06/kubernetes_cover.png)
 # JIRA CICD Tutorials
 > Jira를 쿠버네티스 클러스터에 올리고, Gitlab, Jenkins를 연동해서 DevOps toolchain을 구성합니다.
