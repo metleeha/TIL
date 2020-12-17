@@ -3,6 +3,7 @@ module.exports = {
     title: `Today Hadong Learned`,
     description: `Hadong's personal Wiki`,
     base: "/TIL/",
+    dest: 'build',
     themeConfig: {
         logo: 'https://avatars1.githubusercontent.com/u/45955032?s=460&v=4',
         nav: [{
@@ -21,9 +22,5 @@ module.exports = {
         // text
     },
     plugins: [
-        ['@vuepress/pwa', {
-            serviceWorker: true,
-            updatePopup: true
-        }]
     ]
 }
