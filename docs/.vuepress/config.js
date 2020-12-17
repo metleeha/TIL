@@ -1,3 +1,5 @@
+const sidebar = require('./sidebar')
+
 // config.js
 module.exports = {
     title: `Today Hadong Learned`,
@@ -14,7 +16,7 @@ module.exports = {
             link: 'https://metleeha.tistory.com/'
           },
         ],
-        sidebar: 'auto',
+        sidebar: sidebar,
         lastUpdated: 'Last Updated',
         smoothScroll: true
     },
