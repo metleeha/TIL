@@ -10,7 +10,7 @@
         >
       </figure>
       <div ref="siteName">
-        <strong>Dev Hayden</strong>
+        <strong>Dev Hadong</strong>
         <em>Today I Learned</em>
       </div>
     </router-link>

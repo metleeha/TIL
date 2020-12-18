@@ -1,5 +1,9 @@
 ---
 title: JIRA CICD Tutorials
+tags:
+    - jira
+    - jenkins
+    - gitlab
 ---
 
 ![](https://media.vlpt.us/images/hamon/post/ef7781b1-9609-4239-a6a9-816fd504aa06/kubernetes_cover.png)

@@ -3,10 +3,19 @@ const Typescript = './Typescript';
 const DevOps = './DevOps';
 const CS = './CS';
 const Database = './Database';
+const Vue = './Vue';
 
 const JavascriptList = [
     'regular-expression-1',
     'regular-expression-2'
+]
+
+const TypescriptList = [
+    'nodejs-express-typescript'
+]
+
+const VueList = [
+    'vuepress-tag'
 ]
 
 const DevOpsList = [
@@ -17,9 +26,7 @@ const CSList = [
     'basic-questions'
 ]
 
-const TypescriptList = [
-    'nodejs-express-typescript'
-]
+
 
 const DatabaseSQLList = [
     'concat',
@@ -36,6 +43,10 @@ module.exports = [
     {
         title: 'Typescript',
         children: TypescriptList.map(v => `${Typescript}/${v}`)
+    },
+    {
+        title: 'Vue',
+        children: VueList.map(v => `${Vue}/${v}`)
     },
     {
         title: 'CS',

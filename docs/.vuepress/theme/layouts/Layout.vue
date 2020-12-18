@@ -57,7 +57,7 @@ export default {
     Home,
     Page,
     Sidebar,
-    Navbar
+    Navbar,
   },
 
   data () {

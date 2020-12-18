@@ -2,7 +2,7 @@ const sidebar = require("./sidebar");
 
 // config.js
 module.exports = {
-    title: `Hayden`,
+    title: `Hadong`,
     description: `Hadong's personal Wiki`,
     base: "/TIL/",
     dest: "build",
