@@ -25,4 +25,4 @@
 |12|Interview|Basic Questions|
 |13|Project|Portable Forum(Django + Vue.js)|
 |14-15|Review|Programmers Frontend Dev(ilovedog-vanilla-js)|
-|16|Project|Deploy TIL using VuePress|
+|16-18|Project|Deploy TIL using VuePress|
