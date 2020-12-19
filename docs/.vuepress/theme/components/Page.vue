@@ -13,7 +13,7 @@ import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'
 
 export default {
-  components: { PageEdit, PageNav, Comment },
+  components: { PageEdit, PageNav },
   props: ['sidebarItems']
 }
 </script>
