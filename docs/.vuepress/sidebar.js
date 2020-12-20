@@ -7,7 +7,8 @@ const Database = './Database';
 
 const JavascriptList = [
     'regular-expression-1',
-    'regular-expression-2'
+    'regular-expression-2',
+    'throttle-debounce'
 ]
 
 const TypescriptList = [
