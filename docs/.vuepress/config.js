@@ -4,7 +4,7 @@ const sidebar = require("./sidebar");
 module.exports = {
     title: `Hadong`,
     description: `Hadong's personal Wiki`,
-    base: "",
+    base: "/TIL/",
     dest: "build",
     themeConfig: {
         logo: 'https://avatars1.githubusercontent.com/u/45955032?s=460&v=4',
