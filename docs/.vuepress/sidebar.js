@@ -13,7 +13,8 @@ const JavascriptList = [
 ]
 
 const TypescriptList = [
-    'nodejs-express-typescript'
+    'nodejs-express-typescript',
+    'wooa-tech-learning'
 ]
 
 const DevOpsList = [
