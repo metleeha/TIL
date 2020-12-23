@@ -1,4 +1,4 @@
-# Typescript & Express 프로젝트 시작하기  
+# [TS] Typescript & Express 프로젝트 시작하기  
 > BFF 개발을 위한 Node.js Express 서버 Typescript로 작성하기
 
 ## npm package.json 설정
