@@ -3,6 +3,7 @@ const Typescript = './Typescript';
 const DevOps = './DevOps';
 const CS = './CS';
 const Database = './Database';
+const GraphQL = './GraphQL';
 const Tools = './Tools';
 // const Vue = './Vue';
 
@@ -32,6 +33,10 @@ const DatabaseNOSQLList = [
     'nosql'
 ]
 
+const GraphQLList = [
+    'setting-up-prisma'
+]
+
 const ToolsList = [
     'marp'
 ]
@@ -49,6 +54,10 @@ module.exports = [
     //     title: 'Vue',
     //     children: VueList.map(v => `${Vue}/${v}`)
     // },
+    {
+        title: 'GraphQL',
+        children: GraphQLList.map(v => `${GraphQL}/${v}`)
+    },
     {
         title: 'CS',
         children: CSList.map(v => `${CS}/${v}`)
@@ -73,6 +82,7 @@ module.exports = [
     {
         title: 'Tools',
         children: ToolsList.map(v => `${Tools}/${v}`)
-    }
+    },
+
 
 ]
