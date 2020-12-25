@@ -17,7 +17,7 @@ mkdir prisma
 touch prisma/schema.prisma
 ```
 
-#### schema.prisma 파일 작성 예시
+### schema.prisma 로컬 테스트 파일 작성 예시
 ```prisma
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
@@ -33,45 +33,70 @@ generator client {
 }
 
 model User {
-  id          Int       @id @default(autoincrement())
-  username    String    @unique
-  email       String    @unique
-  firstName   String    @default("")
-  lastName    String    
-  bio         String?
-  followers   User[]    @relation("FollowRelation", references: [id])
-  following   User[]    @relation("FollowRelation", references: [id])
-  posts       Post[]
-  likes       Like[]
-  comments    Comment[]
+  id           Int       @id @default(autoincrement())
+  username     String    @unique
+  email        String    @unique
+  firstName    String    @default("")
+  lastName     String    @default("")
+  bio          String    @default("")
+  comments     Comment[]
+  likes        Like[]
+  messagesFrom Message[] @relation("MessageFrom")
+  messagesTo   Message[] @relation("MessageTo")
+  followers    User[]    @relation("UserFollows")
+  following    User[]    @relation("UserFollows")
+  Post         Post[]
+  rooms        Room[]
 }
 
 model Post {
-  id          Int       @id @default(autoincrement())
-  location    String
-  caption     String
-  user        User[]
-  files       File[]
-  likes       Like[]
-  comments    Comment[]
+  id       Int       @id @default(autoincrement())
+  location String
+  caption  String
+  comments Comment[]
+  files    File[]
+  likes    Like[]
+  User     User[]
 }
 
 model Like {
-  id      Int       @id @default(autoincrement())
-  user    User?
-  post    Post?
+  id     Int   @id @default(autoincrement())
+  userId Int?
+  postId Int?
+  post   Post? @relation(fields: [postId], references: [id])
+  user   User? @relation(fields: [userId], references: [id])
 }
 
 model Comment {
-  id      Int       @id @default(autoincrement())
-  user    User?
-  post    Post?
+  id     Int   @id @default(autoincrement())
+  userId Int?
+  postId Int?
+  post   Post? @relation(fields: [postId], references: [id])
+  user   User? @relation(fields: [userId], references: [id])
 }
 
 model File {
-  id      Int       @id @default(autoincrement())
-  url     String
-  post    Post?
+  id     Int    @id @default(autoincrement())
+  url    String
+  postId Int?
+  post   Post?  @relation(fields: [postId], references: [id])
+}
+
+model Room {
+  id           Int       @id @default(autoincrement())
+  messages     Message[]
+  participants User[]
+}
+
+model Message {
+  id     Int     @id @default(autoincrement())
+  text   String?
+  fromId Int
+  toId   Int
+  roomId Int?
+  from   User    @relation("MessageFrom", fields: [fromId], references: [id])
+  room   Room?   @relation(fields: [roomId], references: [id])
+  to     User    @relation("MessageTo", fields: [toId], references: [id])
 }
 ```
 
@@ -93,5 +118,4 @@ prisma generate
 ```bash
 prisma studio
 ```
-
 
