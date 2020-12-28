@@ -34,7 +34,7 @@ const DatabaseNOSQLList = [
 ]
 
 const GraphQLList = [
-    'setting-up-prisma'
+    'setting-up-graphqlserver-with-prisma2-apollo'
 ]
 
 const ToolsList = [
