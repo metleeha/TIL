@@ -1,11 +1,16 @@
+const Basic = './Basic';
+const CS = './CS';
 const Javascript = './Javascript';
 const Typescript = './Typescript';
 const DevOps = './DevOps';
-const CS = './CS';
 const Database = './Database';
 const GraphQL = './GraphQL';
 const Tools = './Tools';
 // const Vue = './Vue';
+
+const BasicList = [
+    'cross-browsing'
+]
 
 const JavascriptList = [
     'regular-expression-1',
@@ -34,7 +39,7 @@ const DatabaseNOSQLList = [
 ]
 
 const GraphQLList = [
-    'setting-up-graphqlserver-with-prisma2-apollo'
+    'setting-up-graphqlserver'
 ]
 
 const ToolsList = [
@@ -42,6 +47,10 @@ const ToolsList = [
 ]
 
 module.exports = [
+    {
+        title: 'Basic',
+        children: BasicList.map(v => `${Basic}/${v}`)
+    },
     {
         title: 'Javascript',
         children: JavascriptList.map(v => `${Javascript}/${v}`)
