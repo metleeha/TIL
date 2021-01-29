@@ -6,7 +6,6 @@ const DevOps = './DevOps';
 const Database = './Database';
 const GraphQL = './GraphQL';
 const Tools = './Tools';
-// const Vue = './Vue';
 
 const FrontEndList = [
     'cross-browsing',
@@ -60,10 +59,6 @@ module.exports = [
         title: 'Typescript',
         children: TypescriptList.map(v => `${Typescript}/${v}`)
     },
-    // {
-    //     title: 'Vue',
-    //     children: VueList.map(v => `${Vue}/${v}`)
-    // },
     {
         title: 'GraphQL',
         children: GraphQLList.map(v => `${GraphQL}/${v}`)
