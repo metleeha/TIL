@@ -1,4 +1,4 @@
-const Basic = './Basic';
+const FrontEnd = './FrontEnd';
 const CS = './CS';
 const Javascript = './Javascript';
 const Typescript = './Typescript';
@@ -8,8 +8,9 @@ const GraphQL = './GraphQL';
 const Tools = './Tools';
 // const Vue = './Vue';
 
-const BasicList = [
-    'cross-browsing'
+const FrontEndList = [
+    'cross-browsing',
+    'why-sass'
 ]
 
 const JavascriptList = [
@@ -48,8 +49,8 @@ const ToolsList = [
 
 module.exports = [
     {
-        title: 'Basic',
-        children: BasicList.map(v => `${Basic}/${v}`)
+        title: 'FrontEnd',
+        children: FrontEndList.map(v => `${FrontEnd}/${v}`)
     },
     {
         title: 'Javascript',
