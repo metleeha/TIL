@@ -1,4 +1,4 @@
-const Frontend = './Frontend';
+const FrontEnd = './FrontEnd';
 const CS = './CS';
 const Javascript = './Javascript';
 const Typescript = './Typescript';
@@ -7,7 +7,7 @@ const Database = './Database';
 const GraphQL = './GraphQL';
 const Tools = './Tools';
 
-const FrontendList = [
+const FrontEndList = [
     'cross-browsing',
     'why-sass'
 ]
@@ -48,8 +48,8 @@ const ToolsList = [
 
 module.exports = [
     {
-        title: 'Frontend',
-        children: FrontendList.map(v => `${Frontend}/${v}`)
+        title: 'FrontEnd',
+        children: FrontEndList.map(v => `${FrontEnd}/${v}`)
     },
     {
         title: 'Javascript',

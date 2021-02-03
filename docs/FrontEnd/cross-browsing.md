@@ -1,5 +1,4 @@
 ---
-title: Cross Browsing
 tags: [ "cross browsing", "frontend" ]
 ---
 

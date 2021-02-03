@@ -1,5 +1,4 @@
 ---
-title: Why Sass
 tags: [ "Sass", "SCSS" ]
 ---
 # Sass를 사용하는 이유 
