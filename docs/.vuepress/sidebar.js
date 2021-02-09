@@ -9,7 +9,8 @@ const Tools = './Tools';
 
 const FrontEndList = [
     'cross-browsing',
-    'why-sass'
+    'why-sass',
+    'study-reference'
 ]
 
 const JavascriptList = [
