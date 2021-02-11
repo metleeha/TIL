@@ -7,3 +7,4 @@
 
 ### 인터뷰
 - 프론트엔드 인터뷰 핸드북 [Github](https://github.com/yangshun/front-end-interview-handbook)
+- 신입 프론트엔드 개발자를 위한 면접 조언 [Blog](https://taegon.kim/archives/5770)
