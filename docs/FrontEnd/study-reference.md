@@ -8,3 +8,9 @@
 ### 인터뷰
 - 프론트엔드 인터뷰 핸드북 [Github](https://github.com/yangshun/front-end-interview-handbook)
 - 신입 프론트엔드 개발자를 위한 면접 조언 [Blog](https://taegon.kim/archives/5770)
+
+
+## 읽고 지나간 글
+### 블로그
+- 세션 기반 인증 방식과 토큰 기반 인증 (JWT) [Link](https://yonghyunlee.gitlab.io/node/jwt/)
+- HTTPS와 SSL 인증서 [Link](https://wayhome25.github.io/cs/2018/03/11/ssl-https/)
