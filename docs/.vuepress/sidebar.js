@@ -5,6 +5,7 @@ const Typescript = './Typescript';
 const DevOps = './DevOps';
 const Database = './Database';
 const GraphQL = './GraphQL';
+const Project = './Project';
 const Tools = './Tools';
 
 const FrontEndList = [
@@ -41,6 +42,10 @@ const DatabaseNOSQLList = [
 
 const GraphQLList = [
     'setting-up-graphqlserver'
+]
+
+const ProjectList = [
+    'stock-bot'
 ]
 
 const ToolsList = [
@@ -84,6 +89,10 @@ module.exports = [
     {
         title: 'DevOps',
         children: DevOpsList.map(v => `${DevOps}/${v}`)
+    },
+    {
+        title: 'Project',
+        children: ProjectList.map(v => `${Project}/${v}`)
     },
     {
         title: 'Tools',
