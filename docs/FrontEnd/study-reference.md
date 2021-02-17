@@ -11,7 +11,7 @@
 - 프론트엔드 개발자 인터뷰 후기 (면접 질문 정리) [Blog](https://velog.io/@tmmoond8/프론트엔드-개발자-인터뷰-후기-면접-질문-정리-작성-중)
 
 
-## 읽고 지나간 글
+## 주요 개념 정리글
 ### 블로그
 - 세션 기반 인증 방식과 토큰 기반 인증 (JWT) [Link](https://yonghyunlee.gitlab.io/node/jwt/)
 - HTTPS와 SSL 인증서 [Link](https://wayhome25.github.io/cs/2018/03/11/ssl-https/)
