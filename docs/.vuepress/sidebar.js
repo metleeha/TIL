@@ -10,6 +10,7 @@ const Tools = './Tools';
 
 const FrontEndList = [
     'cross-browsing',
+    'interview-review',
     'why-sass',
     'study-reference'
 ]
