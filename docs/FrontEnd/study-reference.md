@@ -9,7 +9,7 @@
 - 프론트엔드 인터뷰 핸드북 [Github](https://github.com/yangshun/front-end-interview-handbook)
 - 신입 프론트엔드 개발자를 위한 면접 조언 [Blog](https://taegon.kim/archives/5770)
 - 프론트엔드 개발자 인터뷰 후기 (면접 질문 정리) [Blog](https://velog.io/@tmmoond8/프론트엔드-개발자-인터뷰-후기-면접-질문-정리-작성-중)
-
+- 자바스크립트 기본 개념 [Blog](https://velog.io/@cadenzah/series/Master-the-JavaScript-Interview)
 
 ## 주요 개념 정리글
 ### 블로그
