@@ -4,3 +4,5 @@
 - [번역글](https://velog.io/@jakeseo_me/2019-03-15-2303-작성됨-rmjta5a3xh)
 
 ## 1. 콜 스택
+
+## 2. 자바스크립트의 원시 타입 (Primary Type)
