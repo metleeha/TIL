@@ -14,4 +14,7 @@
 ## 주요 개념 정리글
 ### 블로그
 - 세션 기반 인증 방식과 토큰 기반 인증 (JWT) [Link](https://yonghyunlee.gitlab.io/node/jwt/)
+- JWT 인증 배워보기 [Link](https://github.com/leejh3224/Markdown-Archive/blob/master/jwt-guide(2).md)
 - HTTPS와 SSL 인증서 [Link](https://wayhome25.github.io/cs/2018/03/11/ssl-https/)
+- [GraphQL] Apollo Hooks 소개/사용법 [Link](https://www.daleseo.com/graphql-react-apollo-hooks/)
+- Typescript 디자인 패턴 [Blog](https://vallista.kr/archives/)
