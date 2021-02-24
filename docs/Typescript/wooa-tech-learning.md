@@ -17,6 +17,16 @@
     - Redux 만들기 (reducer, action, dispatch)
 
 ## 2주 - 1차
+- React가 개발된 이유 
+- React와 Virtual DOM 이해하기 
+- React 만들어보기 
+- React의 컴포넌트와 상태 관리 
+
+## 2주 - 2차
+- 함수 컴포넌트의 상태와 컴포넌트 분리 
+- 제너레이터와 비동기 
+- 제너레이터 
+
 
 ## Reference 
 - https://haranglog.tistory.com/
