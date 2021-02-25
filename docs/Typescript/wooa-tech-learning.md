@@ -15,7 +15,6 @@
     - 비동기 Promise, async & await
     - Flux 패턴
     - Redux 만들기 (reducer, action, dispatch)
-
 ## 2주 - 1차
 - React가 개발된 이유 
 - React와 Virtual DOM 이해하기 
@@ -26,6 +25,12 @@
 - 함수 컴포넌트의 상태와 컴포넌트 분리 
 - 제너레이터와 비동기 
 - 제너레이터 
+
+## 3주 - 1차
+- Javascript로 구현한 Redux 리뷰 
+- 커링 
+- Redux의 비동기와 미들웨어 
+- 구현한 Redux에 미들웨어 추가하기 
 
 
 ## Reference 
