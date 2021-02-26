@@ -32,6 +32,11 @@
 - Redux의 비동기와 미들웨어 
 - 구현한 Redux에 미들웨어 추가하기 
 
+## 3주 - 2차 
+- Webpack 
+- Loader 
+- Plugin 
+- React + Typescript 예제 훑어보기 
 
 ## Reference 
 - https://haranglog.tistory.com/
