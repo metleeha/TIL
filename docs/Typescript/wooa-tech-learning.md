@@ -38,6 +38,14 @@
 - Plugin 
 - React + Typescript 예제 훑어보기 
 
+## 4주 - 1차
+- 컴포넌트 분할 
+- 모니터링 예제 훑어보기 
+- Typescript의 type과 interface 
+- type과 interface의 차이점 
+- 제네릭 
+- API 통신 
+
 ## Reference 
 - https://haranglog.tistory.com/
 - https://github.com/soongyu/woowa-tech-learning-react-typescript
