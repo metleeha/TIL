@@ -44,7 +44,14 @@
 - Typescript의 type과 interface 
 - type과 interface의 차이점 
 - 제네릭 
-- API 통신 
+- API 통신
+
+## 4주차 - 2차
+- MobX 
+- observable 클래스와 데코레이터 
+- 클래스 메서드와 this 
+- observable에 반응하는 함수 
+- mobx-react 
 
 ## Reference 
 - https://haranglog.tistory.com/
