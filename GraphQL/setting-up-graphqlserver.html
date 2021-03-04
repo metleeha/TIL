@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Prisma2로 GraphSQL 서버 시작하기 | Hadong</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Hadong's personal Wiki">
+    
+    <link rel="preload" href="/TIL/assets/css/0.styles.50823278.css" as="style"><link rel="preload" href="/TIL/assets/js/app.65d7bf32.js" as="script"><link rel="preload" href="/TIL/assets/js/2.5c9149ed.js" as="script"><link rel="preload" href="/TIL/assets/js/16.caf38c9f.js" as="script"><link rel="prefetch" href="/TIL/assets/js/10.0b558626.js"><link rel="prefetch" href="/TIL/assets/js/11.6c915ac0.js"><link rel="prefetch" href="/TIL/assets/js/12.4e17dcca.js"><link rel="prefetch" href="/TIL/assets/js/13.8f9d6b42.js"><link rel="prefetch" href="/TIL/assets/js/14.e9bb71d2.js"><link rel="prefetch" href="/TIL/assets/js/15.aff205cb.js"><link rel="prefetch" href="/TIL/assets/js/17.c80db85f.js"><link rel="prefetch" href="/TIL/assets/js/18.6daab8a6.js"><link rel="prefetch" href="/TIL/assets/js/19.ae8625f8.js"><link rel="prefetch" href="/TIL/assets/js/20.56452836.js"><link rel="prefetch" href="/TIL/assets/js/21.414edccd.js"><link rel="prefetch" href="/TIL/assets/js/22.313fed06.js"><link rel="prefetch" href="/TIL/assets/js/23.3749797a.js"><link rel="prefetch" href="/TIL/assets/js/24.3c1ef5e8.js"><link rel="prefetch" href="/TIL/assets/js/3.7079bc7f.js"><link rel="prefetch" href="/TIL/assets/js/4.4d0120ab.js"><link rel="prefetch" href="/TIL/assets/js/5.3674de0d.js"><link rel="prefetch" href="/TIL/assets/js/6.92ee8bf5.js"><link rel="prefetch" href="/TIL/assets/js/7.ea28aa25.js"><link rel="prefetch" href="/TIL/assets/js/8.39c8b3cb.js"><link rel="prefetch" href="/TIL/assets/js/9.efeeb6d3.js">
+    <link rel="stylesheet" href="/TIL/assets/css/0.styles.50823278.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TIL/" class="home-link router-link-active"><figure><img src="https://avatars1.githubusercontent.com/u/45955032?s=460&amp;v=4" alt="Hadong"></figure> <div><strong>Dev Hadong</strong> <em>Today I Learned</em></div></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/metleeha/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://metleeha.tistory.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/metleeha/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://metleeha.tistory.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>FrontEnd</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Typescript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>GraphQL</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TIL/GraphQL/setting-up-graphqlserver.html" aria-current="page" class="active sidebar-link">Prisma2로 GraphSQL 서버 시작하기</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/TIL/GraphQL/setting-up-graphqlserver.html#선행-스텝" class="sidebar-link">선행 스텝</a></li><li class="sidebar-sub-header"><a href="/TIL/GraphQL/setting-up-graphqlserver.html#step-1-typescript와-postgresql-세팅하기" class="sidebar-link">Step 1: Typescript와 PostgreSQL 세팅하기</a></li><li class="sidebar-sub-header"><a href="/TIL/GraphQL/setting-up-graphqlserver.html#step-2-graphql-server-세팅하기" class="sidebar-link">Step 2: GraphQL Server 세팅하기</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Database</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>DevOps</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Project</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Tools</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="prisma2로-graphsql-서버-시작하기"><a href="#prisma2로-graphsql-서버-시작하기" class="header-anchor">#</a> Prisma2로 GraphSQL 서버 시작하기</h1> <h2 id="선행-스텝"><a href="#선행-스텝" class="header-anchor">#</a> 선행 스텝</h2> <ul><li>yarn</li> <li>Typescript</li> <li>PostgreSQL</li></ul> <h2 id="step-1-typescript와-postgresql-세팅하기"><a href="#step-1-typescript와-postgresql-세팅하기" class="header-anchor">#</a> Step 1: Typescript와 PostgreSQL 세팅하기</h2> <h3 id="typescript"><a href="#typescript" class="header-anchor">#</a> Typescript</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">yarn</span> <span class="token function">add</span> --dev ts-node-dev typescript
+$ <span class="token function">touch</span> tsconfig.json
+</code></pre></div><p>tsconfig.json</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Target latest version of ECMAScript.</span>
+        <span class="token property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esnext&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// Search under node_modules for non-relative imports.</span>
+        <span class="token property">&quot;moduleResolution&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// Process &amp; infer types from .js files.</span>
+        <span class="token property">&quot;allowJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// Don't emit; allow Babel to transform files.</span>
+        <span class="token property">&quot;noEmit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// Enable strictest settings like strictNullChecks &amp; noImplicitAny.</span>
+        <span class="token property">&quot;strict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// Import non-ES modules as default imports.</span>
+        <span class="token property">&quot;esModuleInterop&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;outDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rootDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;esnext&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;node_modules&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;include&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;src/**/*&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tests/**/*&quot;</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>이어서 데이터베이스(RDBMs)를 세팅한다. 여러 데이터베이스가 있지만, Prisma2에서는 PostgreSQ을
+데이터베이스로 추천하고 있다. 참고 링크는 <a href="https://www.prisma.io/dataguide/postgresql/benefits-of-postgresql" target="_blank" rel="noopener noreferrer">여기<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>있다.</p> <h3 id="macos-환경에서-postgresql-설치하기"><a href="#macos-환경에서-postgresql-설치하기" class="header-anchor">#</a> MacOS 환경에서 PostgreSQL 설치하기</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ brew <span class="token function">install</span> postgresql
+
+$ brew services start postgresql
+
+$ createuser -P -s <span class="token operator">&lt;</span>userId<span class="token operator">&gt;</span>
+
+$ psql postgres
+
+<span class="token assign-left variable">postgres</span><span class="token operator">=</span><span class="token comment"># CREATE DATABASE &lt;databaseName&gt;;</span>
+</code></pre></div><h2 id="step-2-graphql-server-세팅하기"><a href="#step-2-graphql-server-세팅하기" class="header-anchor">#</a> Step 2: GraphQL Server 세팅하기</h2> <p>이제 GrqphQL 서버를 시작한다. package.json에 라이브러리를 설치한다.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">yarn</span> init 
+$ <span class="token function">yarn</span> <span class="token function">add</span> graphql-yoga graphql-tools merge-graphql-schemas express
+</code></pre></div><h4 id="server-ts"><a href="#server-ts" class="header-anchor">#</a> server.ts</h4> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">&quot;dotenv&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> GraphQLServer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;graphql-yoga&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> logger <span class="token keyword">from</span> <span class="token string">&quot;morgan&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> schema <span class="token keyword">from</span> <span class="token string">'./schema'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createContext <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./context'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token constant">PORT</span> <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">PORT</span> <span class="token operator">||</span> <span class="token number">4000</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GraphQLServer</span><span class="token punctuation">(</span><span class="token punctuation">{</span> schema<span class="token punctuation">,</span> context<span class="token operator">:</span>createContext <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+server<span class="token punctuation">.</span>express<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">logger</span><span class="token punctuation">(</span><span class="token string">&quot;dev&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+server<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">{</span>port<span class="token operator">:</span> <span class="token constant">PORT</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> 
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">✅ Server running on http://localhost:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">PORT</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>If you want to run Prisma Studio, use prisma studio.
+If you want to generate the Prisma Client, use prisma generate (or prisma generate --watch)
+If you want to update your schema, use prisma introspect.
+If you want to migrate your database, use prisma migrate.</p> <p>Create a migration from changes in Prisma schema, apply it to the database, trigger generators (e.g. Prisma Client)
+$ prisma migrate dev --preview-feature</p> <p>Reset your database and apply all migrations
+$ prisma migrate reset --preview-feature</p> <p>Apply pending migrations to the database in production/staging
+$ prisma migrate deploy --preview-feature</p> <p>Check the status of migrations in the production/staging database
+$ prisma migrate status --preview-feature</p> <p>Specify a schema
+$ prisma migrate status --schema=./schema.prisma --preview-feature</p> <p>먼저 Prisma Client 패키지를 설치한다.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @prisma/cli -D
+</code></pre></div><p>prisma schema 파일을 작성한다.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> prisma
+<span class="token function">touch</span> prisma/schema.prisma
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/4/2021, 10:42:09 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TIL/Typescript/wooa-tech-learning.html" class="prev">
+        [TS] 우아한 테크 러닝 - Typescript
+      </a></span> <span class="next"><a href="/TIL/CS/basic-questions.html">
+        CS Basic Questions
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/TIL/assets/js/app.65d7bf32.js" defer></script><script src="/TIL/assets/js/2.5c9149ed.js" defer></script><script src="/TIL/assets/js/16.caf38c9f.js" defer></script>
+  </body>
+</html>
